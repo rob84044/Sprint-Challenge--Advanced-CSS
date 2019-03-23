@@ -1,1 +1,41 @@
 // Navigation code here
+.flexcolumn{
+  .flex(@e: column;);
+  div h1{
+  .flex();
+  padding-bottom: 20px;
+    }
+  nav{
+    color: @btn-bg-color;
+    .flex(@a: space-around; @e: column; @g: 100%;);
+    border: @nav-border;
+    font-style: @nav-font;
+    background-color: @wild-sand;
+    padding: 25px 0px;
+    div{
+      .flex(@a: space-around; @g: 40%;);
+    }
+    a{
+      text-decoration: none;
+      color: @btn-bg-color;
+      font-size: 1.6rem;
+      &:hover{
+        color: darken(@btn-bg-color, 25%);
+        font-weight: bolder
+      }
+      &:visited{
+        color: darken(@btn-bg-color, 25%);
+        color: @btn-bg-color;
+      }
+      &:active{
+        color: darken(@btn-bg-color, 25%);
+        color: @btn-bg-color;
+      }
+    }
+    li{
+      list-style-type: none;
+      color: @btn-bg-color;
+      
+    }
+  }
+}
