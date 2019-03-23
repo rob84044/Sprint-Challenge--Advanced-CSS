@@ -29,7 +29,9 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      .responsive(@rules: {img{height: 80%; width: 10px;}}; @width: 90%;)
     }
+    .responsive(@rules: {.sky{display: none;}.launch{display: none;}});
   }
 
   .visit-planets {
@@ -42,6 +44,7 @@
     p {
       margin-top: 13px;
     }
+    .responsive(@rules: {padding-bottom: 40px;};)
   }
 
   .walk {
@@ -64,7 +67,9 @@
 
       .btn {
         .button();
+        .responsive(@rules: {order: 1;})
       }
+      .responsive(@rules: {order: 1; padding-top: 30px;};)
     }
 
     .walk-img {
@@ -75,7 +80,10 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+        .responsive(@rules: {img{height: 90%; width: 10px;}; margin: 0px;}; @width: 95%;)
       }
+      .responsive(@rules: {.flex(); margin: 0px;};);
     }
+    .responsive(@rules: {.flex(@e: column;); padding: 10px;}; )
   }
-}// home
+}

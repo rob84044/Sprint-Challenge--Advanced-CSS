@@ -53,11 +53,10 @@
 //Media Querrie mixin
 .responsive(@rules: {}; @width: 100%;) {
  
-  @media only screen and (max-width: @mobile) {
+  @media only screen and (max-width: @phone) {
       @rules();
       width: @width;
       margin: 0 auto;
-      .flex(@e: column;)
 
   }
 }
